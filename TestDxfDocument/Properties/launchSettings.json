@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TestDxfDocument": {
+      "commandName": "Project",
+      "commandLineArgs": "-vacuumTable VacuumTable_Parameter.json OutputFile.dxf"
+    }
+  }
+}
