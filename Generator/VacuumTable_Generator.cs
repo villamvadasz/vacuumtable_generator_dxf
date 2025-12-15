@@ -109,7 +109,7 @@ namespace myGenerator
         {
             double x_size = this.parameters.vacuum_x_size - (2.0 * this.parameters.vacuum_holder_width) - (2.0 * this.parameters.vacuum_wand_width);
             double y_size = this.parameters.vacuum_y_size - (2.0 * this.parameters.vacuum_wand_width);
-            generate_square_with_rounded_edges(point_x2 + this.parameters.vacuum_holder_width + this.parameters.vacuum_wand_width, point_y2 + this.parameters.vacuum_wand_width, x_size, y_size, this.parameters.vacuum_fillet_radius);
+            generate_square_with_rounded_edges(point_x2 + this.parameters.vacuum_holder_width + this.parameters.vacuum_wand_width, point_y2 + this.parameters.vacuum_wand_width, x_size, y_size, this.parameters.vacuum_fillet_radius + this.parameters.vacuum_slot_width);
         }
         private void generate_topSquare(double point_x2, double point_y2) 
         {
